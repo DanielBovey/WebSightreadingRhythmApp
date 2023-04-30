@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+    <body>
+        <div id="app">
+            <div id="rhythm-container">
+                <img src="Images/new44timesig.png" class="notation" id="time-sig">
+                <div class="rhythm-display"></div>
+            </div>
+            <div id="action-buttons">
+                <button id="new-rhythm">New Rhythm</button>
+            </div>
+
+            <div class="settings">
+                <h3 id="settings-title">Settings:</h3>
+                <form id="time-sig-form">
+                    <p>Time Signature:</p>
+                    <div>
+                        <input type="radio" id="t44" name="time-sig-selection" value="4">
+                        <label for="t44" class="time-sig-label">4<br>4</label><br>
+                    </div>
+                    <div>
+                        <input type="radio" id="t34" name="time-sig-selection" value="3">
+                        <label for="t34" class="time-sig-label">3<br>4</label><br>
+                    </div>  
+                </form>
+                <form id="rhythm-values-form">
+                    <p>Rhythm Values to include:</p>
+                    <div id="rhythm-buttons">
+                        <input type="checkbox" id="semibreve" name="values-included" value="semibreve">
+                        <label for="semibreve">Semibreves</label>
+                        <input type="checkbox" id="dotted-minim" name="values-included" value="dottedMinim">
+                        <label for="dotted-minim">Dotted Minims</label>
+                        <input type="checkbox" id="minim" name="values-included" value="minim">
+                        <label for="minim">Minims</label>
+                        <input type="checkbox" id="crotchet" name="values-included" value="crotchet">
+                        <label for="crotchet">Crotchets</label>
+                        <input type="checkbox" id="quaver" name="values-included" value="quaver">
+                        <label for="quaver">Quavers</label>
+                        <input type="checkbox" id="minim-rest" name="values-included" value="minimRest">
+                        <label for="minim-rest">Minim rests</label>
+                        <input type="checkbox" id="crotchet-rests" name="values-included" value="crotchetRest">
+                        <label for="crotchet-rests">Crotchet rests</label>
+                        <input type="checkbox" id="quaver-rest" name="values-included" value="quaverRest">
+                        <label for="quaver-rest">Quaver rests</label>
+                    </div>
+                </form>
+                <form>
+                    <p>Number of bars:</p>
+                    <div id="bars-buttons">
+                        <div>
+                            <input type="radio" id="bars1" name="num-bars" value="1">
+                            <label for="bars1">1</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="bars2" name="num-bars" value="2">
+                            <label for="bars2">2</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="bars3" name="num-bars" value="3">
+                            <label for="bars3">3</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="bars4" name="num-bars" value="4">
+                            <label for="bars4">4</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        
+        <script src="script.js"></script>
+    </body>
+</html>
